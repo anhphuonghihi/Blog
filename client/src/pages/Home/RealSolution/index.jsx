@@ -28,8 +28,7 @@ const solution = [
     {
       link: "/home",
       img: LeQuyDon,
-      title:
-        "Sử dụng màn hình tương tác ViewSonic ViewBoard trong giảng dạy",
+      title: "Sử dụng màn hình tương tác ViewSonic ViewBoard trong giảng dạy",
     },
     {
       link: "/home",
@@ -78,7 +77,12 @@ const RealSolution = () => {
                     return (
                       <Link to={item.link} key={index}>
                         <Card hover>
-                          <Image src={item.img} alt="image" width="620px" height="320px"/>
+                          <Image
+                            src={item.img}
+                            alt="image"
+                            width="620px"
+                            height="320px"
+                          />
                           <CardBody>
                             <CardTitle className={styles["uk-card-title"]}>
                               {item.title}
@@ -96,11 +100,11 @@ const RealSolution = () => {
             })}
           </Slideshow>
           <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin">
-            <li data-uk-slideshow-item="0">
-              <a href="#"></a>
+            <li class="uk-active" uk-slideshow-item="0">
+              <Link to="#"></Link>
             </li>
-            <li data-uk-slideshow-item="1">
-              <a href="#"></a>
+            <li uk-slideshow-item="1">
+              <Link to="#"></Link>
             </li>
           </ul>
         </div>
