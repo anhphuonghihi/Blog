@@ -16,7 +16,7 @@ const Slider = () => {
         <li>
           <Link to={slider[0].link}>
             <div className={styles["row"]}>
-              <div style={background}></div>
+              {/* <div style={background}></div> */}
               <img src={X2000l} alt="" />
             </div>
           </Link>

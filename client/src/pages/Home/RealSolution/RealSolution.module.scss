@@ -1,0 +1,64 @@
+.readsolution-background {
+  background-color: #f3f3f3;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  min-height: 480px;
+}
+.readsolution-title {
+  text-align: center;
+  width: 100%;
+}
+.readsolution-body {
+  padding: 3rem 0;
+}
+.readsolution-card {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 420px;
+  max-height: 480px;
+  a {
+    max-height: 480px;
+    flex: 1;
+    margin: 0 1rem;
+    text-decoration: none;
+    @media screen and (max-width: 768px) {
+      margin: 0.4rem;
+    }
+  }
+}
+.uk-button-default {
+  border-width: 1px !important;
+  border-color: #212121 !important;
+  color: #212121 !important;
+}
+
+.uk-button-default:hover {
+  background-color: #777 !important;
+  border-color: #777 !important;
+  color: #fff !important;
+  transition: border 0.5s, color 0.5s, background 0.5s;
+}
+.uk-card-title {
+  min-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+[class*="uk-position-center-left"],
+[class*="uk-position-center-right"] {
+  top: calc(20% - var(--uk-position-margin-offset));
+  --uk-position-translate-y: -20%;
+  transform: translate(0, var(--uk-position-translate-y));
+  background-color: rgba(255, 255, 255, 0.35);
+  color: #000 !important;
+  border-radius: 50%;
+  padding: 10px 15px;
+}
+.show {
+  max-height: 460px;
+}
+img{
+  height: 260px;
+}
