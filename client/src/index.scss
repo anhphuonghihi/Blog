@@ -2,11 +2,23 @@ body {
   margin: 0;
   font-family: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial,
     sans-serif;
+  overflow-x: hidden;
+}
+.readsolution {
+  .uk-slideshow-items {
+    min-height: 500px !important;
+    @media screen and (max-width: 768px) {
+      min-height: 1500px !important;
+      li {
+        max-height: 1500px !important;
+      }
+    }
+  }
 }
 .uk-slideshow-items {
   min-height: 500px !important;
-}
 
+}
 .uk-navbar-nav {
   width: 100%;
 }
@@ -14,4 +26,9 @@ body {
   min-width: 190px;
   max-width: 190px !important;
   padding: 15px;
+}
+.uk-slideshow-nav {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }

@@ -20,7 +20,7 @@
   img {
     width: 65%;
     @media screen and (max-width: 768px) {
-      display: none;
+      width: 100%;
     }
   }
   .left {
@@ -71,6 +71,9 @@
   margin-right: auto;
   margin-left: auto;
   display: flex;
+  @media screen and (max-width: 768px) {
+    max-height: 520px;
+  }
   align-items: center;
   .big {
     padding-left: 100px;
@@ -78,6 +81,7 @@
     width: 500px;
     @media screen and (max-width: 768px) {
       padding: 10px;
+      width: auto;
     }
     span {
       font-weight: 400;
@@ -91,10 +95,19 @@
   margin-right: auto;
   margin-left: auto;
   display: flex;
-  flex:1;
+  flex: 1;
+  @media screen and (max-width: 768px) {
+    img {
+      display: none;
+    }
+    max-height: 520px;
+    .big {
+      font-size: 24px;
+    }
+  }
   .link {
     display: flex;
-    flex:1;
+    flex: 1;
     align-items: center;
     justify-content: space-around;
   }

@@ -38,3 +38,9 @@
 span {
   text-align: center;
 }
+.flex {
+  flex-wrap: wrap;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}

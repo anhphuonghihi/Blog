@@ -59,6 +59,9 @@
     color: #000 !important;
     border-radius: 50%;
     padding: 10px 15px;
+    @media screen and (max-width: 768px) {
+      top: calc(100% - var(--uk-position-margin-offset));
+    }
   }
   min-height: 500px !important;
 }
