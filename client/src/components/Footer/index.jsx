@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
         </Section>
         <Section>
-          <div class={styles["footer-content"]}>
+          <div className={styles["footer-content"]}>
             <CardTitle>Liên hệ</CardTitle>
             <CardBody>
               Số điện thoại: +886-2-2246-3456
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
         </Section>
         <Section>
-          <div class={styles["footer-content"]}>
+          <div className={styles["footer-content"]}>
             <CardTitle>Địa chỉ</CardTitle>
             <CardBody>
               ViewSonic International Corporation 9F, No. 192, Lien Chien Road
