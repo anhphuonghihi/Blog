@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 60">
+  <defs>
+    <style>
+      .b {
+        fill: #060001;
+      }
+
+      .c {
+        fill: #ebeae9;
+      }
+
+      .d {
+        fill: #db0025;
+      }
+
+      .e {
+        stroke-linecap: square;
+      }
+
+      .e, .f {
+        fill: none;
+        stroke: #060001;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .f {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <rect class="c" x="3.65" y="9.83" width="72.31" height="40.33" rx="3.14" ry="3.14"/>
+  <path class="b" d="M34.32,32.74l3.59,4.82,5.68-7.12c.44-.55,1.28-.55,1.72,0l6.51,8.18c.57,.73,.07,1.79-.86,1.79H29.04c-.9,0-1.43-1.04-.88-1.77l4.4-5.91c.44-.58,1.32-.58,1.76,0Z"/>
+  <circle class="d" cx="31.43" cy="22.9" r="3.31"/>
+  <rect class="f" x="3.65" y="9.83" width="72.71" height="40.33" rx="3.35" ry="3.35" transform="translate(80 60) rotate(180)"/>
+  <line class="e" x1="48.6" y1="30" x2="76.35" y2="30"/>
+  <line class="e" x1="3.65" y1="30" x2="35.24" y2="30"/>
+  <line class="e" x1="40" y1="43.12" x2="40" y2="50.17"/>
+  <line class="e" x1="40" y1="9.83" x2="40" y2="32.51"/>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 60">
+  <defs>
+    <style>
+      .b {
+        fill: #060001;
+      }
+
+      .c {
+        fill: none;
+        stroke: #db0025;
+        stroke-linecap: square;
+      }
+
+      .c, .d {
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .d {
+        fill: #ebeae9;
+        stroke: #060001;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <rect class="d" x="14.22" y="9.6" width="51.56" height="32.72" rx="5.82" ry="5.82"/>
+  <rect class="b" x="19.47" y="48.44" width="41.06" height="1.96"/>
+  <rect class="b" x="39.02" y="42.26" width="1.96" height="7.49"/>
+  <line class="c" x1="29.8" y1="32.83" x2="50.2" y2="19.09"/>
+</svg>

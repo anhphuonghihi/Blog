@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 60">
+  <defs>
+    <style>
+      .b, .c {
+        fill: #060001;
+      }
+
+      .d, .e, .f {
+        stroke: #060001;
+        stroke-linecap: square;
+      }
+
+      .d, .e, .f, .g {
+        stroke-linejoin: round;
+      }
+
+      .d, .e, .g {
+        stroke-width: 1.5px;
+      }
+
+      .d, .f {
+        fill: #ebeae9;
+      }
+
+      .e {
+        fill: #fff;
+      }
+
+      .f {
+        stroke-width: 1.26px;
+      }
+
+      .g {
+        fill: none;
+        stroke: #db0025;
+        stroke-linecap: round;
+      }
+
+      .g, .c {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="e" d="M28.12-5.04h23.76c3.74,0,6.78,3.04,6.78,6.78V55.31c0,3.74-3.04,6.78-6.78,6.78H28.12c-3.74,0-6.78-3.04-6.78-6.78V1.74c0-3.74,3.04-6.78,6.78-6.78Z" transform="translate(68.53 -11.47) rotate(90)"/>
+  <rect class="d" x="10.68" y="13.75" width="58.64" height="29.54" rx="4.58" ry="4.58"/>
+  <path class="b" d="M17.74,47.16H62.26c0,1.64-1.33,2.97-2.97,2.97H20.71c-1.64,0-2.97-1.33-2.97-2.97h0Z"/>
+  <path class="c" d="M40,34.04c-4.03,0-7.31-3.28-7.31-7.31s3.28-7.31,7.31-7.31,7.31,3.28,7.31,7.31-3.28,7.31-7.31,7.31Z"/>
+  <path class="g" d="M40,35.85c-5.03,0-9.13-4.1-9.13-9.13s4.09-9.13,9.13-9.13,9.13,4.09,9.13,9.13-4.1,9.13-9.13,9.13Z"/>
+  <circle class="f" cx="40" cy="26.72" r="4.77"/>
+</svg>

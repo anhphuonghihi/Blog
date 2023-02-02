@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 60">
+  <defs>
+    <style>
+      .b {
+        fill: #ebeae9;
+        stroke-linecap: round;
+        stroke-width: 1.84px;
+      }
+
+      .b, .c {
+        stroke-linejoin: round;
+      }
+
+      .b, .d {
+        stroke: #060001;
+      }
+
+      .c {
+        fill: none;
+        stroke: #db0025;
+        stroke-linecap: square;
+      }
+
+      .c, .d {
+        stroke-width: 1.5px;
+      }
+
+      .d {
+        fill: #fff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <rect class="b" x="5.58" y="9.75" width="57.89" height="40.5" rx="5.01" ry="5.01"/>
+  <path class="c" d="M20.35,32.56c13.34-7.8,13.66,13.07,24.88,7.23"/>
+  <g>
+    <rect class="d" x="59.39" y="10.59" width="3.56" height="32.98" rx="1.78" ry="1.78" transform="translate(43.95 -37.56) rotate(51.21)"/>
+    <path class="d" d="M46.15,36.79h1.76v2.42c0,.49-.39,.88-.88,.88h0c-.49,0-.88-.39-.88-.88v-2.42h0Z" transform="translate(47.53 -22.3) rotate(51.21)"/>
+  </g>
+</svg>
