@@ -59,7 +59,7 @@ const solution = [
 ];
 const RealSolution = () => {
   return (
-    <Section>
+    <Section className="readsolution">
       <Container size="expand" className={styles["readsolution-background"]}>
         <div className={styles["readsolution-title"]}>
           <h2>Giải pháp thực tế</h2>
@@ -99,8 +99,8 @@ const RealSolution = () => {
               );
             })}
           </Slideshow>
-          <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin">
-            <li class="uk-active" uk-slideshow-item="0">
+          <ul className="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin">
+            <li className="uk-active" uk-slideshow-item="0">
               <Link to="#"></Link>
             </li>
             <li uk-slideshow-item="1">
