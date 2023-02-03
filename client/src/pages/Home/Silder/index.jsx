@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Silder.module.scss";
-import { Slideshow, Section, Button, Container } from "uikit-react";
+import { Slideshow, Section, Button } from "uikit-react";
 import X2000l from "../../../assets/x2000l-4k.png";
 import Light from "../../../assets/light.png";
 import Edu from "../../../assets/edu.png";
