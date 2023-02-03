@@ -14,16 +14,21 @@ import styles from "./Navbar.module.scss";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import { useState } from "react";
+import { useWindowSize } from "@internals/hooks";
+import { useEffect, useState } from "react";
 function NavScrollExample() {
   const [menu, setMenu] = useState(false);
+  const size = useWindowSize();
+  useEffect(() => {
+    if (size.width < 768) {
+      setMenu(true);
+    }
+  }, [size]);
+
   return (
     <NavbarContainer dropbar-mode="push" className={styles["menu"]}>
       {!menu && (
-        <Navbar
-          className={styles["container"]}
-          style={{ display: menu ? "none" : "flex" }}
-        >
+        <Navbar className={styles["container"]}>
           <NavItem>
             <Link href="/">
               <Image src={logo} width="171" height="28" alt="logo" />
