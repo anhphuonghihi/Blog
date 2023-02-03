@@ -1,9 +1,15 @@
 .footer-content {
   text-align: start;
   padding: 5px;
+  div {
+    @media screen and (max-width: 768px) {
+      padding: 10px;
+    }
+  }
 }
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }

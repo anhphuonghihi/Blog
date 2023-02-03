@@ -1,3 +1,4 @@
+import { useWindowSize } from "@internals/hooks";
 import React from "react";
 import styles from "./Specifications.module.scss";
 const Specifications = () => {
@@ -49,6 +50,7 @@ const Specifications = () => {
       text: ["M100-240V:50/60HZ"],
     },
   ];
+  const size = useWindowSize();
   return (
     <div className={styles["specifications"]}>
       <div className={styles["header"]}>
@@ -75,7 +77,9 @@ const Specifications = () => {
           </div>
         ))}
       </div>
-      <img className={styles["icon"]} src="./icon.png" alt="" />
+      {size.width > 1323 && (
+        <img className={styles["icon"]} src="./icon.png" alt="" />
+      )}
       <div className={styles["bottom"]}>
         <img src="./center.png" alt="" />
       </div>

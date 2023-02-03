@@ -18,7 +18,7 @@ const Footer = () => {
         <Section>
           <div className={styles["footer-content"]}>
             <CardTitle>Liên hệ</CardTitle>
-            <CardBody>
+            <CardBody >
               Số điện thoại: +886-2-2246-3456
               <br />
               Email:abc@gmail.com
