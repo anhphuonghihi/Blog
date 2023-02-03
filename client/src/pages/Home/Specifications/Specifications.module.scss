@@ -1,0 +1,131 @@
+.specifications {
+  background-color: #fff;
+  margin: 0 15px;
+  padding: 0 15px;
+  position: relative;
+  max-width: 1357px;
+  margin: 0 auto;
+
+  padding-bottom: 20px;
+  .icon {
+    position: absolute;
+    top: 164px;
+    width: 400px;
+    left: 480px;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .content {
+    text-align: center;
+    margin-top: 60px;
+
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    h1 {
+      padding: 20px 150px;
+      color: white;
+      display: flex;
+      align-items: center;
+
+      border-radius: 50px;
+      background-color: #5cb6a1;
+    }
+  }
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  gap: 30px;
+  padding: 0 20px;
+  position: relative;
+  .flex-5,
+  .flex-6,
+  .flex-4 {
+    @media screen and (min-width: 768px) {
+      position: relative;
+      right: -270px;
+    }
+    .text {
+      width: 300px;
+      text-align: left;
+    }
+    .title {
+      text-align: left;
+    }
+  }
+  .id-5,
+  .id-6,
+  .id-4 {
+    position: relative;
+    right: 120px;
+  }
+  .text {
+    width: 300px;
+    text-align: center;
+  }
+  .title {
+    font-size: 30px;
+    width: 300px;
+    text-align: center;
+  }
+  p {
+    color: white;
+    background-color: brown;
+    padding: 15px;
+    height: 54px;
+    width: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    border-radius: 50%;
+    font-size: 28px;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .id-0 {
+    background-color: rgba(153, 205, 50, 0.671);
+  }
+  .id-1 {
+    background-color: rgb(232, 114, 118);
+  }
+  .id-2 {
+    background-color: rgb(193, 200, 181);
+  }
+  .id-3 {
+    background-color: rgba(245, 158, 158, 0.615);
+  }
+  .id-4 {
+    background-color: rgb(97, 224, 171);
+  }
+  .id-5 {
+    background-color: rgb(189, 228, 110);
+  }
+  .id-6 {
+    background-color: rgba(153, 205, 50, 0.745);
+  }
+}
+.bottom {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
