@@ -1,0 +1,28 @@
+.container {
+  padding: 1.5rem 2rem 1.5rem 3.3rem;
+  max-width: 460px;
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
+  .title {
+    font-size: 80%;
+    font-weight: bolder;
+    color: black;
+    margin-left: 3px;
+    margin-bottom: 3px;
+  }
+  h2 {
+    margin: 0;
+    color: #900;
+  }
+  .content {
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
+  }
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}

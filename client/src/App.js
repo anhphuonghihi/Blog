@@ -1,6 +1,6 @@
 import { Outlet, Route, Routes } from "react-router-dom";
 import { Footer, Navbar } from "@internals/components";
-import { Home } from "@internals/pages";
+import { Home,Education } from "@internals/pages";
 function App() {
   return (
     <div className="App">
@@ -10,6 +10,14 @@ function App() {
             path="/"
             element={
               <Home title="Trang chủ - ViewSonic Việt Nam | Website Chính Thức" />
+            }
+          />
+        </Route>
+        <Route element={<Layout />}>
+          <Route
+            path="/education"
+            element={
+              <Education title="Giải Pháp Giáo Dục ViewSonic" />
             }
           />
         </Route>

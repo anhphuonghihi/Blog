@@ -1,0 +1,24 @@
+.container {
+  max-width: 1600px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 768px) {
+    padding-bottom: 3rem !important;
+  }
+  @media (min-width: 768px) {
+    padding-top: 3rem !important;
+  }
+  .col12 {
+  }
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  .card {
+    transition: 0.3s ease;
+    border: 1px solid#f1f1f1;
+  }
+}

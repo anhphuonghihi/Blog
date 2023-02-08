@@ -1,0 +1,160 @@
+.slider {
+  padding-bottom: 0.5rem;
+  .container {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+    .Container__text {
+      width: 600px;
+      padding: 50px;
+      padding-right: 0;
+      @media screen and (max-width: 768px) {
+        width: auto;
+        padding: 10px;
+      }
+    }
+  }
+  .slider__title {
+    color: #990000;
+    font-weight: 700;
+  }
+  .slider__txt {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-weight: 400;
+    color: #333;
+  }
+  .slider__content {
+    color: #222;
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: -1px;
+    padding: 0;
+    border: none;
+    text-rendering: optimizeSpeed;
+  }
+  .container__image {
+    height: 562px;
+    width: 900px;
+    @media screen and (max-width: 768px) {
+      width: auto;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  position: relative;
+  section {
+    max-width: 1600px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .slider-ul {
+    bottom: -50px;
+    position: absolute;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 1rem;
+    list-style: none;
+    button {
+      border: none;
+      background-color: transparent;
+    }
+  }
+  li {
+    box-sizing: content-box;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background-color: #8f8f8f;
+    width: 10px;
+    height: 10px;
+    flex: 0 1 auto;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-clip: padding-box;
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+  }
+  .active {
+    opacity: 1;
+  }
+  .slider-text-ul {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    button {
+      flex-basis: 0;
+      flex-grow: 1;
+      min-width: 0;
+      max-width: 100%;
+      cursor: pointer;
+      border: none;
+      background-color: #ffff;
+      padding: 0;
+    }
+    .link {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 600;
+      flex-grow: 1;
+      background-color: #eee;
+      padding: 1em;
+      border-top: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-bottom: 5px solid #ddd;
+      background: #fff;
+      font-size: 24px;
+      position: relative;
+      width: 100%;
+      @media screen and (max-width: 1248px) {
+        min-height: 105px;
+        font-size: 20px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+        min-height: 100px;
+      }
+      @media screen and (max-width: 550px) {
+        font-size: 14px;
+        min-height: 80px;
+      }
+      @media screen and (max-width: 428px) {
+        font-size: 14px;
+        min-height: 120px;
+      }
+      @media screen and (max-width: 320px) {
+        font-size: 14px;
+        min-height: 120px;
+      }
+    }
+    .link.active {
+      padding: 1em;
+      background-color: #fff;
+      border-right: 1px solid #ddd;
+      border-top: 1px solid #ddd;
+      border-bottom: 5px solid #900;
+    }
+  }
+}

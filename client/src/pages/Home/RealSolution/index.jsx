@@ -10,6 +10,7 @@ import {
   Container,
   Button,
 } from "uikit-react";
+import Carousel from "react-material-ui-carousel";
 import styles from "./RealSolution.module.scss";
 import LeDucTho from "../../../assets/Case-Study-Le-Duc-Tho.jpg";
 import LeQuyDon from "../../../assets/Case-Study-Le-Quy-Don.jpg";
@@ -65,11 +66,7 @@ const RealSolution = () => {
           <h2>Giải pháp thực tế</h2>
         </div>
         <div className={styles["readsolution-body"]}>
-          <Slideshow
-            navigationStyle="light"
-            navigation={true}
-            className={styles["show"]}
-          >
+          <Carousel>
             {solution.map((items, index) => {
               return (
                 <li className={styles["readsolution-card"]}>
@@ -98,15 +95,7 @@ const RealSolution = () => {
                 </li>
               );
             })}
-          </Slideshow>
-          <ul className="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin">
-            <li className="uk-active" uk-slideshow-item="0">
-              <Link to="#"></Link>
-            </li>
-            <li uk-slideshow-item="1">
-              <Link to="#"></Link>
-            </li>
-          </ul>
+          </Carousel>
         </div>
       </Container>
     </Section>

@@ -1,0 +1,24 @@
+.title {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+p {
+  font-weight: 400;
+  color: #333;
+}
+h2 {
+  font-size: 2.35rem;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: -1px;
+  text-rendering: optimizeSpeed;
+}
+.hr-line {
+  background-color: #222;
+  display: inline-block;
+  height: 1px;
+  width: 120px;
+  margin: 20px 0;
+}

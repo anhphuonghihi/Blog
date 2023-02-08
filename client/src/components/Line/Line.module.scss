@@ -1,0 +1,20 @@
+.container {
+  max-width: 1600px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 768px) {
+    padding-bottom: 3rem !important;
+  }
+  @media (min-width: 768px) {
+    padding-top: 3rem !important;
+  }
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 1px solid;
+    border-top-color: #b1656599;
+    box-sizing: content-box;
+  }
+}

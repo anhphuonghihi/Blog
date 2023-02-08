@@ -1,6 +1,7 @@
 import { useWindowSize } from "@internals/hooks";
 import React from "react";
 import styles from "./Specifications.module.scss";
+
 const Specifications = () => {
   const specifications = [
     {

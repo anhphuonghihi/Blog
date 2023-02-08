@@ -1,0 +1,20 @@
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.btn,
+.btn:hover {
+  border-width: 1px;
+  background-color: #900;
+  border-color: #900;
+  color: #fff;
+  border-radius: 0;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  padding: 0.5em 2em;
+  text-transform: uppercase;
+  min-width: 180px;
+  display: inline-block;
+  font-weight: 400;
+  border: 1px solid transparent;
+}

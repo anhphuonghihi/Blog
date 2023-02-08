@@ -22,6 +22,8 @@ function NavScrollExample() {
   useEffect(() => {
     if (size.width < 768) {
       setMenu(true);
+    } else {
+      setMenu(false);
     }
   }, [size]);
 
@@ -36,10 +38,10 @@ function NavScrollExample() {
           </NavItem>
           <Navbar className={styles["container"]}>
             <NavItem className={styles["li"]}>
-              <Link>Giới thiệu</Link>
+              <Link className={styles["link"]}>Giới thiệu</Link>
             </NavItem>
             <NavItem className={styles["li"]}>
-              <Link className={styles["dropdown"]}>
+              <Link className={styles["link"]}>
                 Giải pháp
                 <KeyboardArrowDownIcon />
               </Link>
@@ -54,7 +56,7 @@ function NavScrollExample() {
               </NavbarDropdown>
             </NavItem>
             <NavItem className={styles["li"]}>
-              <Link>
+              <Link className={styles["link"]}>
                 Hỗ trợ <KeyboardArrowDownIcon />
               </Link>
               <NavbarDropdown className={styles["drop"]}>
@@ -67,7 +69,7 @@ function NavScrollExample() {
               </NavbarDropdown>
             </NavItem>
             <NavItem className={styles["li"]}>
-              <Link>Phân phối và bảo hành</Link>
+              <Link className={styles["link"]}>Phân phối và bảo hành</Link>
             </NavItem>
           </Navbar>
           <Navbar className={styles["right"]}>

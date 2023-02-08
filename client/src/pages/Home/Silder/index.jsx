@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Silder.module.scss";
-import { Slideshow, Section, Button } from "uikit-react";
+import { Section, Button } from "uikit-react";
 import X2000l from "../../../assets/x2000l-4k.png";
 import Light from "../../../assets/light.png";
 import Edu from "../../../assets/edu.png";
@@ -9,6 +9,9 @@ import Gaming from "../../../assets/gaming.png";
 import Home from "../../../assets/home.png";
 import M1Pro from "../../../assets/M1Pro-bg.png";
 import Vp2776BG from "../../../assets/vp2776-bg.png";
+
+import Carousel from "react-material-ui-carousel";
+
 import Vp2776I1 from "../../../assets/vp2776-icon.png";
 import Vp2776I2 from "../../../assets/vp2776.png";
 import { Card } from "@mui/material";
@@ -62,11 +65,7 @@ const slider = [
 const Slider = () => {
   return (
     <Section style={{ padding: 20 }}>
-      <Slideshow
-        navigationStyle="light"
-        navigation={true}
-        className={styles["show"]}
-      >
+      <Carousel>
         {slider.map((item, index) => {
           if (index === 4) {
             return (
@@ -120,30 +119,7 @@ const Slider = () => {
               </Card>
             );
         })}
-      </Slideshow>
-      <ul className="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin">
-        <li className="uk-active" uk-slideshow-item="0">
-          <Link to="#"></Link>
-        </li>
-        <li uk-slideshow-item="1">
-          <Link to="#"></Link>
-        </li>
-        <li uk-slideshow-item="2">
-          <Link to="#"></Link>
-        </li>
-        <li uk-slideshow-item="3">
-          <Link to="#"></Link>
-        </li>
-        <li uk-slideshow-item="4">
-          <Link to="#"></Link>
-        </li>
-        <li uk-slideshow-item="5">
-          <Link to="#"></Link>
-        </li>
-        <li uk-slideshow-item="6">
-          <Link to="#"></Link>
-        </li>
-      </ul>
+      </Carousel>
     </Section>
   );
 };
