@@ -10,13 +10,16 @@
     border: none;
     background: transparent;
   }
-}
-
-@media screen and (max-width: 768px) {
   button {
-    display: block;
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    button {
+      display: block;
+    }
   }
 }
+
 .container {
   width: 100%;
   flex: 3;

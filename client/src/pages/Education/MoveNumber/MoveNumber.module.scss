@@ -6,11 +6,7 @@
   margin-left: auto;
   @media (min-width: 768px) {
     padding-bottom: 3rem !important;
-  }
-  @media (min-width: 768px) {
     padding-top: 3rem !important;
-  }
-  .col12 {
   }
 }
 .content {
@@ -20,5 +16,52 @@
   .card {
     transition: 0.3s ease;
     border: 1px solid#f1f1f1;
+    margin: 0 0.5rem;
+    flex-basis: 0;
+    position: relative;
+    width: 100%;
+    background: #fff;
+    color: #666;
+    flex-grow: 1;
+    min-width: 0;
+    max-width: 100%;
+    @media (max-width: 768px) {
+      margin-bottom: 1rem !important;
+      margin-top: 1rem !important;
+    }
+    .text {
+      min-height: 1px;
+      padding: 1.25rem;
+    }
+    .title {
+      min-height: 120px;
+      color: #555;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+    .bottom {
+      font-size: 12px;
+      padding: 0 1.25em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      .left {
+        text-align: left;
+        flex-grow: 1;
+        min-width: 0;
+        max-width: 100%;
+        flex-basis: 0;
+        position: relative;
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 }

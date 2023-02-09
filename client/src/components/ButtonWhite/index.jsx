@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Button.module.scss";
-const Button = ({ link, text }) => {
+const ButtonWhite = ({ link, text }) => {
   return (
     <div>
       {link && (
@@ -13,4 +13,4 @@ const Button = ({ link, text }) => {
   );
 };
 
-export default Button;
+export default ButtonWhite;

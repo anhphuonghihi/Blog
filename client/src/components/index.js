@@ -5,3 +5,7 @@ export { default as Title } from "./Title";
 export { default as CustomCarousel } from "./CustomCarousel";
 export { default as Box } from "./Box";
 export { default as Line } from "./Line";
+export { default as ImageGallery } from "./Carouselmage";
+export { default as Header } from "./Header";
+export { default as ButtonWhite } from "./ButtonWhite";
+export { default as Text } from "./Text";

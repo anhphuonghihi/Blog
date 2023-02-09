@@ -11,17 +11,20 @@ const MoveNumber = () => {
       title: "Giải pháp lớp học thông minh tại trường Ghaf Primary (UAE)",
       text: "CASE STUDY",
       img: New1,
+      link: "/",
     },
     {
       title: "Chuyển đổi số tại trường North West London Jewish",
       text: "CASE STUDY",
       img: New2,
+      link: "/",
     },
     {
       title:
         "ViewSonic tại triển lãm giáo dục BETT 2022: Ứng dụng công nghệ vào giảng dạy trong trạng thái bình Thường Mới",
       text: "TIN TỨC",
       img: New3,
+      link: "/",
     },
   ];
   return (
@@ -31,48 +34,20 @@ const MoveNumber = () => {
         content="Tìm hiểu thêm về ứng dụng các công nghệ ViewSonic trong giảng dạy"
       />
       <div className={styles["content"]}>
-        <Link to="/" className={styles["card"]}>
-          <div className={styles["img"]}>
-            <img src={New1} alt="" />
-          </div>
-          <div className={styles["text"]}>
-            <div className={styles["title"]}>
-              Giải pháp lớp học thông minh tại trường Ghaf Primary (UAE)
+        {move.map((item, index) => (
+          <Link to={item.link} className={styles["card"]}>
+            <div className={styles["img"]}>
+              <img src={item.img} alt="" />
             </div>
-            <div className={styles["bottom"]}>
-              <div className={styles["left"]}></div>
-              <div className={styles["right"]}></div>
+            <div className={styles["text"]}>
+              <div className={styles["title"]}>{item.title}</div>
+              <div className={styles["bottom"]}>
+                <div className={styles["left"]}> {item.text}</div>
+                <div className={styles["right"]}>Tìm hiểu thêm</div>
+              </div>
             </div>
-          </div>
-        </Link>
-        <Link to="/" className={styles["card"]}>
-          <div className={styles["img"]}>
-            <img src={New1} alt="" />
-          </div>
-          <div className={styles["text"]}>
-            <div className={styles["title"]}>
-              Giải pháp lớp học thông minh tại trường Ghaf Primary (UAE)
-            </div>
-            <div className={styles["bottom"]}>
-              <div className={styles["left"]}></div>
-              <div className={styles["right"]}></div>
-            </div>
-          </div>
-        </Link>{" "}
-        <Link to="/" className={styles["card"]}>
-          <div className={styles["img"]}>
-            <img src={New1} alt="" />
-          </div>
-          <div className={styles["text"]}>
-            <div className={styles["title"]}>
-              Giải pháp lớp học thông minh tại trường Ghaf Primary (UAE)
-            </div>
-            <div className={styles["bottom"]}>
-              <div className={styles["left"]}></div>
-              <div className={styles["right"]}></div>
-            </div>
-          </div>
-        </Link>
+          </Link>
+        ))}
       </div>
     </div>
   );

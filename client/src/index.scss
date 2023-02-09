@@ -2,7 +2,9 @@ body {
   margin: 0;
   font-family: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial,
     sans-serif;
-  overflow-x: hidden;
+  @media screen and (max-width: 768px) {
+    overflow-x: hidden;
+  }
 }
 .readsolution {
   .uk-slideshow-items {
@@ -32,4 +34,48 @@ body {
   }
 }
 
-@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+.btn-nav:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.btn-nav,
+.btn-nav:hover {
+  border-width: 1px;
+  background-color: #900;
+  border-color: #900;
+  color: #fff;
+  border-radius: 0;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  padding: 0.5em 2em;
+  text-transform: uppercase;
+  min-width: 180px;
+  display: inline-block;
+  font-weight: 400;
+  border: 1px solid transparent;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50%;
+
+  padding: 0.5rem 15px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 3%);
+  .btn-nav{
+    display: flex;
+  }
+}
+.relative {
+  position: relative;
+  .btn-nav{
+    display: none;
+  }
+}
+.navb {
+  height: 4rem;
+  background-color: #fff;
+  width: 100%;
+  transition: all 0.3s;
+}
