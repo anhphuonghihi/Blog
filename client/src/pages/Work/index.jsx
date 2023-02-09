@@ -6,6 +6,7 @@ import Product from "./Product";
 import Offices from "./Offices";
 import Space from "./Space";
 import Details from "./Details";
+import RecomendUsing from "./RecomendUsing";
 const Work = ({ title }) => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,6 +22,7 @@ const Work = ({ title }) => {
       <Offices />
       <Space/>
       <Details/>
+      <RecomendUsing/>
     </div>
   );
 };

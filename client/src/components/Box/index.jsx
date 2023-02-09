@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Box.module.scss";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-const index = ({ title ,link,img}) => {
+const index = ({ title, link, img, text }) => {
   return (
     <Link to={link} className={styles["box"]}>
       <div>
@@ -10,6 +10,7 @@ const index = ({ title ,link,img}) => {
           <img src={img} alt="" />
         </div>
         <h4 className={styles["text"]}>{title}</h4>
+        {text && <p>{text}</p>}
         <div className={styles["more"]}>
           Đọc thêm <ChevronRightIcon />
         </div>
