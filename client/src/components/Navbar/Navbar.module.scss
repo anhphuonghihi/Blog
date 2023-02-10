@@ -88,6 +88,36 @@
       color: #000;
     }
   }
+  img {
+    max-width: 120px;
+    width: 100%;
+    margin-right: 5px;
+  }
+  @media screen and (min-width: 768px) {
+    .link-br::after {
+      border-right: 1px solid #ccc;
+      content: "　";
+    }
+  }
+  .link-icon {
+    min-height: 20px;
+    margin-top: 25px;
+    border: 1px solid;
+    padding-left: 15px;
+    border-radius: 5px;
+    background-color: #990000;
+    color: #fff;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    svg {
+      color: #fff;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
 }
 .col6 {
   width: 50%;
@@ -102,4 +132,19 @@
   max-width: 100vw !important;
   width: 100vw !important;
   height: 50vh !important;
+}
+.edu-logo {
+  display: inline-block;
+  padding-left: 1em;
+  margin-right: 3rem;
+  font-size: 1rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 30px;
+  &::before {
+    border-left: 1px solid #ccc;
+    content: "　";
+  }
 }

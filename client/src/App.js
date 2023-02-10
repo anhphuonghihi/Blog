@@ -13,6 +13,12 @@ function App() {
             }
           />
           <Route
+            path="/home"
+            element={
+              <Home title="Trang chủ - ViewSonic Việt Nam | Website Chính Thức" />
+            }
+          />
+          <Route
             path="/education"
             element={<Education title="Giải Pháp Giáo Dục ViewSonic" />}
           />
@@ -34,7 +40,6 @@ const Layout = () => {
           minHeight: "calc(100vh - 80px)",
         }}
       >
-        <Navbar />
         <Outlet />
       </div>
       <Footer />

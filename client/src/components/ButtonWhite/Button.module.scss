@@ -5,10 +5,11 @@
   border: 1px solid #212121;
   border-radius: 0;
   font-size: 13px;
+
   letter-spacing: 0.5px;
   color: #212121;
   margin-top: 0;
-  padding: 0.5em 2em;
+  padding: 0.25em 2em;
   text-transform: uppercase;
   min-width: 180px;
   display: inline-block;
@@ -16,6 +17,14 @@
   &:hover {
     background-color: #777;
     border-color: #777;
-    color: #fff;
+
+    p {
+      color: #fff;
+    }
+  }
+  line-height: 24px;
+  p {
+    display: inline;
+    line-height: 24px;
   }
 }

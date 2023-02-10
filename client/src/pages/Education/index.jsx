@@ -1,4 +1,4 @@
-import { Line } from "@internals/components";
+import { Line, Navbar } from "@internals/components";
 import React from "react";
 import { Helmet } from "react-helmet";
 import About from "./About";
@@ -13,6 +13,7 @@ const Educations = ({ title }) => {
   }, []);
   return (
     <div>
+      <Navbar edu/>
       <Helmet>
         <title>{title}</title>
       </Helmet>

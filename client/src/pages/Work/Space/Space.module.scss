@@ -5,4 +5,70 @@
   text-align: center;
   padding-right: 15px;
   padding-left: 15px;
+  @media only screen and (max-width: 768px) {
+    max-width: 90%;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 28px;
+  .box {
+    display: flex;
+    max-width: calc(50% - 28px);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 3%);
+    transition: 0.3s ease;
+    border: 1px solid#f1f1f1;
+    &:hover {
+      box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+      svg {
+        transform: translateX(6px);
+        transition: 0.3s ease;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+    .img {
+      max-width: calc(50% - 28px);
+      @media only screen and (max-width: 768px) {
+        max-width: 100%;
+      }
+    }
+    @media only screen and (max-width: 1000px) {
+      max-width: 100%;
+    }
+    .text {
+      padding: 1rem;
+      padding-left: 2rem;
+      h3 {
+        color: #333;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        font-weight: 600;
+      }
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        font-weight: 400;
+        color: #333;
+        margin-top: 20px;
+      }
+      span {
+        color: #666;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.space {
+  padding: 3rem 0;
 }

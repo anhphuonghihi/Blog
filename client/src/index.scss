@@ -2,9 +2,7 @@ body {
   margin: 0;
   font-family: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial,
     sans-serif;
-  @media screen and (max-width: 768px) {
-    overflow-x: hidden;
-  }
+  overflow-x: hidden;
 }
 .readsolution {
   .uk-slideshow-items {
@@ -79,4 +77,13 @@ body {
   background-color: #fff;
   width: 100%;
   transition: all 0.3s;
+}
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+iframe {
+  max-width: 100vw;
 }

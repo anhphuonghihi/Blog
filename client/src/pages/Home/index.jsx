@@ -5,10 +5,12 @@ import RealSolution from "./RealSolution";
 import Feature from "./Feature";
 import Solutions from "./Solutions";
 import Specifications from "./Specifications";
+import { Navbar } from "@internals/components";
 const Home = (props) => {
   const { title } = props;
   return (
     <div>
+      <Navbar  />
       <Helmet>
         <title>{title}</title>
       </Helmet>
